@@ -1,0 +1,103 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.container {
+  background: linear-gradient(135deg, #262f40, #938796);
+  height: 100vh;
+  width: 100%;
+  padding: 10px;
+}
+.todo-list {
+  width: 100%;
+  max-width: 540px;
+  background-color: rgb(255, 255, 255);
+  margin: 100px auto 20px;
+  padding: 40px 30px 40px;
+  border-radius: 15px;
+  position: relative;
+}
+.todo-list h2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 37px;
+  margin-top: -20px;
+  padding: 5px;
+}
+.todo-list h2 img {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  margin-top: -17px;
+}
+.row input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+}
+
+.row button {
+  background-color: #ff5945;
+  color: #edeef0;
+  padding: 16px 50px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  
+}
+ul li{
+    list-style: none;
+    font-size: 15px;
+    padding :10px 20px 10px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before
+{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    /* background-image: url(https://www.svgrepo.com/show/52314/unchecked.svg); */
+    background-size: cover;
+    background-position: center;
+    top: 5px;
+    left: 8px;
+    border: 1px solid black;
+}
+ul li.checked
+{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before
+{
+    background-image: url(https://www.iconpacks.net/icons/5/free-icon-red-check-mark-validation-tick-16234.png);
+ 
+}
+ul li span 
+{
+    position: absolute;
+    right: 0px;
+    top: 8px;
+
+}
+ul li span :hover
+{
+    background: #edeef0;
+}
